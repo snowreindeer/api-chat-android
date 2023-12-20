@@ -20,7 +20,7 @@ import java.util.Properties
 
 class MainActivity : AppCompatActivity() {
     private val client = OkHttpClient()
-    // creating variables on below line.
+    lateinit var btnSubmit: Button
     lateinit var txtResponse: TextView
     lateinit var idTVQuestion: TextView
     lateinit var etQuestion: TextInputEditText
@@ -28,11 +28,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         etQuestion=findViewById<TextInputEditText>(R.id.etQuestion)
-        //val btnSubmit=findViewById<Button>(R.id.btnSubmit)
+        val btnSubmit=findViewById<Button>(R.id.btnSubmit)
         idTVQuestion=findViewById<TextView>(R.id.idTVQuestion)
         txtResponse=findViewById<TextView>(R.id.txtResponse)
 
-        /** btnSubmit.setOnClickListener {
+         btnSubmit.setOnClickListener {
         val question=etQuestion.text.toString().trim()
         Toast.makeText(this,question, Toast.LENGTH_SHORT).show()
         if(question.isNotEmpty()){
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         }
         }
         }
-        } */
+        }
 
 
         etQuestion.setOnEditorActionListener(TextView.OnEditorActionListener { v, actionId, event ->
