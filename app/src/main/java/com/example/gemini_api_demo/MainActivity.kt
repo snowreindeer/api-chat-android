@@ -20,7 +20,6 @@ import java.util.Properties
 
 class MainActivity : AppCompatActivity() {
     private val client = OkHttpClient()
-    lateinit var btnSubmit: Button
     lateinit var txtResponse: TextView
     lateinit var idTVQuestion: TextView
     lateinit var etQuestion: TextInputEditText
