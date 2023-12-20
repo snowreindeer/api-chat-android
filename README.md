@@ -1,61 +1,37 @@
-# Chatbot Integration Showcase
+# Uvod
+Sprva je bila glavna ideja integracija novega modela LLM iz Googla **"Gemini"**. To je sicer uspelo, a dejstvo je, da so vsi Googlovi produkti s področja strojnega učenja trenutno na voljo samo v ZDA in niso na voljo v Evropski uniji. Prednost so širše zmožnosti modela (vizualna obdelava) in tudi dejstvo, da je (zaenkrat) brezplačen. Slaba stran je nedostopnost v Evropski uniji (samo s pomočjo VPN-ja).
 
-## Introduction
+## Kako izgleda studio:
+![Slika](C:\Users\Nadiss\AndroidStudioProjects\geminiapidemo2\images\photo_2023-12-20_02-20-50.jpg)
 
-This repository demonstrates the integration of a language model into an Android Studio project to create a chatbot. Initially, the aim was to incorporate Google's LLM model, "Gemini," which excelled in visual processing and was freely available. However, due to limitations in availability outside the United States, the decision was made to showcase the functionality using the OPEN AI company's API.
+Za povezavo modela morate dodati:
 
-### Features
+`gradle
+dependencies {
+implementation("com.google.ai.client.generativeai:generativeai:0.1.1")
+}`
 
-- **Gemini Model Integration:** The initial goal was to integrate Google's "Gemini" LLM model for its enhanced visual processing capabilities.
-- **OPEN AI API Integration:** To overcome accessibility issues in the European Union, the chatbot functionality is demonstrated using the OPEN AI API, providing a simpler codebase and faster response generation.
-- **Pros and Cons:** Detailed analysis of the advantages and disadvantages of both models, including availability, cost, information limitations, and ecosystem support.
-- **Project Scope:** The repository focuses on showcasing chatbot integration within an Android Studio project.
+Za prikaz uporabe chatbota je smiselno ustvariti simulacijo chat-a z uporabo API-ja podjetja OPEN AI. Prednosti vključujejo:
+- Enostavnejša koda
+- Hitrejše generiranje odziva
+- Uporabniška pogodba vsebuje manj klavzul o prenosu informacij
+- Stabilnost modela (ni nov)
+- Na voljo v Sloveniji
 
-## Getting Started
+Slabosti pa so:
+- Plačljivo (približno 15 $ na mesec)
+- Informacije so omejene do leta 2022
+- Ni tako širokega vizualnega vmesnika
+- Ni "ekosistema", kot je Google
 
-Follow these instructions to set up the project locally on your machine.
+Po zadnjih razpoložljivih podatkih ima ChatGPT trenutno približno 180,5 milijona uporabnikov.
 
-### Prerequisites
+## Repozitorij
+Repozitorij nudi primer uporabe chatbota v projektu Android Studio.
+![Slika](C:\Users\Nadiss\AndroidStudioProjects\geminiapidemo2\images\Screenshot 2023-12-20 020941.png) ![Slika](C:\Users\Nadiss\AndroidStudioProjects\geminiapidemo2\images\Screenshot 2023-12-20 101401.png)
 
-- Android Studio installed on your machine.
-- OPEN AI API key for integrating the chatbot.
+## Malo o podjetju
+OpenAI je velika organizacija z ekipo razvijalcev in raziskovalcev. Redno objavljajo posodobitve in izboljšave za svoje modele. Najnovejši popravki in posodobitve so običajno dokumentirani na uradnih blogih in repozitorijih OpenAI na platformah, kot je GitHub. To tehnologijo je mogoče uporabiti v številnih aplikacijah, lahko odgovarja na vprašanja, pomaga uporabnikom pri ustvarjanju življenjepisov, odgovarja na vprašanja o vremenu in še veliko več. ChatGBT ponuja tudi orodje, ki bo pomagalo ustvariti nekakšen "forum", ki bo omejil uporabnike in jim omogočil samo postavljanje vprašanj, ki se nanašajo na aplikacijo.
 
-### Installation
-
-1. Clone the repository to your local machine:
-
-    ```bash
-    git clone https://github.com/your-username/chatbot-integration.git
-    ```
-
-2. Open the project in Android Studio.
-
-3. Add your OPEN AI API key in the appropriate configuration file.
-
-4. Build and run the project on an Android emulator or device.
-
-## Project Overview
-
-### Screenshots
-
-![Chatbot Interface](screenshots/chatbot_interface.png)
-*Caption: A screenshot of the chatbot interface in action.*
-
-![Project Architecture](screenshots/project_architecture.png)
-*Caption: Overview of the project architecture in Android Studio.*
-
-## Project Management
-
-- **OpenAI Updates:** Regular updates and improvements for the language model are expected. Check the official OpenAI blogs and repositories on GitHub for the latest patches and updates.
-- **Technology Applications:** The chatbot technology showcased in this project can be applied in various domains, from answering questions to assisting users in creating resumes or providing weather information.
-- **User Base:** As of the latest available data, ChatGPT boasts approximately 180.5 million users.
-
-## Conclusion
-
-Chatbots, exemplified by the integration of language models like ChatGPT, offer versatile solutions for applications. From answering queries to creating forums with restricted topics, this technology provides a valuable addition to any application.
-
-Feel free to explore, contribute, and integrate this chatbot technology into your projects!
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+# Zaključek
+Tako so chatboti zelo uporabna tehnologija, ki jo je vsekakor treba upoštevati in jo po možnosti vgraditi v aplikacijo.
