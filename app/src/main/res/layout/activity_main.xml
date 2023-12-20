@@ -33,7 +33,7 @@
                 android:textColor="@color/white"
                 android:textSize="17sp" />
 
-            <!-- text view for displaying response-->
+
             <TextView
                 android:id="@+id/txtResponse"
                 android:layout_width="match_parent"
@@ -46,7 +46,7 @@
         </LinearLayout>
 
     </ScrollView>
-    <!-- text field for asking question-->
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/idTILQuery"
 
@@ -64,7 +64,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#FF000000"
-            android:drawableEnd="@drawable/ic_send"
             android:drawableTint="@color/white"
             android:ems="10"
             android:imeOptions="actionSend"
@@ -73,5 +72,13 @@
             android:textColor="@color/white"
             android:textColorHint="@color/white"
             android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Submit" />
+
     </com.google.android.material.textfield.TextInputLayout>
 </RelativeLayout>
