@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity() {
         idTVQuestion.text = question
         etQuestion.setText("")
 
-        val apiKey= BuildConfig.apikey
+        val apiKey= "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"
         val url="https://api.openai.com/v1/engines/text-davinci-003/completions"
 
         val requestBody="""
@@ -113,6 +113,3 @@ class MainActivity : AppCompatActivity() {
     }
 
     }
-
-
-}
