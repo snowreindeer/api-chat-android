@@ -32,10 +32,10 @@ Repozitorij nudi primer uporabe chatbota v projektu Android Studio.
 
 ## Malo o podjetju
 OpenAI je velika organizacija z ekipo razvijalcev in raziskovalcev. Redno objavljajo posodobitve in izboljšave za svoje modele. Najnovejši popravki in posodobitve so običajno dokumentirani na uradnih blogih in repozitorijih OpenAI na platformah, kot je GitHub. To tehnologijo je mogoče uporabiti v številnih aplikacijah, lahko odgovarja na vprašanja, pomaga uporabnikom pri ustvarjanju življenjepisov, odgovarja na vprašanja o vremenu in še veliko več. ChatGBT ponuja tudi orodje, ki bo pomagalo ustvariti nekakšen "forum", ki bo omejil uporabnike in jim omogočil samo postavljanje vprašanj, ki se nanašajo na aplikacijo.
-![Screenshot 2023-12-20 020941.png](images%2FScreenshot%202023-01-22%081127.png) ![Screenshot 2023-12-20 101401.png](images%2FScreenshot%202023-01-22%081157.png)
 
 ## Vključevanje v projekt
 Naš projekt je storitev iskanja zaposlitve. V projektu je zelo dobro uporabiti api na chatbotu, tako da lahko uporabnik ustvari prošnjo za delo, življenjepis in ostale. V ta namen smo to funkcijo vključili v projekt.
+![images/2.png](images/2.png) ![images/3.png](images/3.png)
 
 
 # Zaključek
